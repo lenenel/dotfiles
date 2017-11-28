@@ -5,7 +5,9 @@ if has("autocmd")
     filetype plugin indent on
 endif
 
-execute pathogen#infect()
+if has("pathogen")
+    execute pathogen#infect()
+endif
 
 set number
 
