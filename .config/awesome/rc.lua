@@ -194,7 +194,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    if (s == 1) then
+    if (s.index == 1) then
         awful.tag({ "browser", "vault", "idea", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
     else
         awful.tag({ "tmux", "board", "rdesktop", "CME", "5", "6", "7", "DevTools", "Postman" }, s, awful.layout.layouts[1])
