@@ -1,14 +1,16 @@
 set langmenu=en_US.UTF-8
 " language English_United States
+" vint: -ProhibitSetNoCompatible
 set nocompatible
+" vint: +ProhibitSetNoCompatible
 
 execute pathogen#infect()
 
-if has("autocmd")
+if has('autocmd')
     filetype plugin indent on
 endif
 
-let mapleader = ","
+let mapleader = ','
 
 set number
 
@@ -40,3 +42,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:syntastic_vim_checkers = ['vint']
