@@ -25,7 +25,7 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
     //add custom config here, such as
 
-    "ui.colorscheme": "nord",
+    "ui.colorscheme": "rdark",
     "ui.fontSize": "14px",
     "oni.hideMenu": true,
     "sidebar.enabled": false,
