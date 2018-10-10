@@ -27,15 +27,18 @@ export const configuration = {
 
     "ui.colorscheme": "rdark",
     "ui.fontSize": "14px",
-    "oni.hideMenu": true,
+    "oni.hideMenu": "hidden",
     "sidebar.enabled": false,
     "statusbar.enabled": false,
     "autoClosingPairs.enabled": false,
+
+    "tabs.mode": "hidden",
 
     //"oni.useDefaultConfig": true,
     //"oni.bookmarks": ["~/Documents"],
     "oni.loadInitVim": true,
     "editor.fontSize": "16px",
+    "editor.renderer": "canvas",
     //"editor.fontFamily": "Monaco",
 
     // UI customizations
