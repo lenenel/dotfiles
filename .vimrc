@@ -13,6 +13,7 @@ endif
 let mapleader = ','
 
 set number
+set relativenumber
 
 set hidden
 set tabstop=4
