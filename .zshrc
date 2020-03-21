@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 
-PATH="$NPM_PACKAGES/bin:$PATH"
+PATH="${HOME}/apache-maven-3.6.3/bin:$NPM_PACKAGES/bin:$PATH"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

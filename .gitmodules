@@ -13,9 +13,6 @@
 [submodule ".vim/bundle/rust.vim"]
 	path = .vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "wbrt_ui/vim/bundle/vim-editorconfig"]
-	path = wbrt_ui/vim/bundle/vim-editorconfig
-	url = git@github.com:sgur/vim-editorconfig.git
 [submodule "/home/lene/vim/bundle/vim-editorconfig"]
 	path = /home/lene/vim/bundle/vim-editorconfig
 	url = git@github.com:sgur/vim-editorconfig.git
