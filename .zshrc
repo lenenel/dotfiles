@@ -96,5 +96,3 @@ if [ -f '/home/lene/google-cloud-sdk/path.zsh.inc' ]; then . '/home/lene/google-
 if [ -f '/home/lene/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/lene/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH=$PATH:/home/lene/bin
-
-source '/home/lene/lib/azure-cli/az.completion'
