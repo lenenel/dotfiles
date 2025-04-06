@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+    export WLR_DRM_NO_MODIFIERS=1
     dbus-run-session sway
 fi
 
@@ -14,7 +15,7 @@ ZSH_THEME="robbyrussell"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 
-PATH="${HOME}/apache-maven-3.6.3/bin:$NPM_PACKAGES/bin:$PATH"
+PATH="${HOME}/.cargo/bin:${HOME}/go/bin:/usr/local/go/bin:${HOME}/apache-maven-3.6.3/bin:$NPM_PACKAGES/bin:$PATH"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

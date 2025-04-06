@@ -54,6 +54,11 @@ run_once("xscreensaver -no-splash")
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
+-- require *after* `beautiful.init` or the theme will be inconsistent!
+local power = require("power_widget")
+-- override the critical battery percentage
+power.critical_percentage = 18
+
 -- This is used later as the default terminal and editor to run.
 terminal = "terminology"
 editor = os.getenv("EDITOR") or "vi"
@@ -233,6 +238,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+            power,
             mytextclock,
             s.mylayoutbox,
         },
